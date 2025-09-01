@@ -3,6 +3,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     gap: 50px;
     padding: 30px;
+    margin-top: 50px;
     background-color: antiquewhite;
 }
 .left-content p, .right-content p{

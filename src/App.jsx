@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router'
 import Home from './pages/Home/Home'
+import Cart from './pages/cart/Cart'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path='/cart' element={<Cart />} />
     </Routes>
     </>
   )
