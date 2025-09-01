@@ -1,0 +1,45 @@
+.Footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    padding: 30px;
+    background-color: antiquewhite;
+}
+.left-content p, .right-content p{
+    line-height: 1.5;
+    font-size: 15px;
+}
+.left-content h1{
+    font-size: 27px;
+    margin-bottom: 15px;
+    color: #b57a0d;
+    padding-top: 13px;
+}
+.footer-bottom{
+    justify-content: center;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 15px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+.center-content a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    line-height: 2;
+    font-size: 15px;
+}
+.center-content a:hover{
+    color: #b57a0d;
+}
+.Footer h6{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+.Footer{
+    grid-template-columns: 1fr;
+}
+}

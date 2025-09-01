@@ -1,0 +1,42 @@
+.main-div{
+background: url('./home.jpeg') no-repeat center center/cover;
+  height: 500px;
+  width: 100%;
+    display: flex;
+    align-items: center;
+}
+.div-content{
+    line-height: 2;
+    max-width: 60%;
+    
+}
+.div-content h1{
+    color: white;
+    font-size: 40px;
+}
+.div-content h4{
+    color: #b57a0d;
+    font-size: 24px;
+    font-weight: bold;
+}
+.div-content p{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+.div-content button{
+    background-color: #b57a0d;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 30px;
+    margin: 40px;
+}
+.div-content h4, .div-content p, .div-content h1{
+    margin-left: 40px;
+}
+@media (max-width: 600px) {
+    .div-content p{
+        display: none;
+    }
+}
