@@ -1,7 +1,6 @@
-/* src/components/Cart/Cart.css */
-
 .cart {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 40px auto;
   display: flex;
   flex-direction: column;
@@ -15,15 +14,17 @@
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow-x: auto; /* Allow horizontal scroll on small screens */
 }
 
 .cart-items-header,
 .cart-items-row {
   display: grid;
-  grid-template-columns: 80px 1fr 100px 100px 100px 60px;
+  grid-template-columns: 60px 1fr 80px 80px 80px 40px;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   padding: 12px 0;
+  min-width: 500px; /* Prevent too narrow layout */
 }
 
 .cart-items-header {
@@ -37,8 +38,8 @@
 }
 
 .cart-item-img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -60,12 +61,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
 }
 
-.cart-total {
-  flex: 1;
-  min-width: 280px;
+.cart-total,
+.cart-promocode {
+  flex: 1 1 300px; /* Grow and shrink with minimum 300px */
   background: #fff;
   padding: 20px;
   border-radius: 12px;
@@ -103,15 +104,6 @@
 }
 
 /* Promo code section */
-.cart-promocode {
-  flex: 1;
-  min-width: 280px;
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
 .cart-promocode p {
   margin-bottom: 10px;
   font-size: 14px;
@@ -121,10 +113,11 @@
 .cart-promocode-input {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .cart-promocode-input input {
-  flex: 1;
+  flex: 1 1 150px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -142,4 +135,48 @@
 
 .cart-promocode-input button:hover {
   background: #0069d9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cart-items-header,
+  .cart-items-row {
+    grid-template-columns: 50px 1fr 60px 60px 60px 30px;
+  }
+
+  .cart-item-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-items-header,
+  .cart-items-row {
+    grid-template-columns: 40px 1fr 50px 50px 50px 30px;
+    font-size: 12px;
+  }
+
+  .cart-total,
+  .cart-promocode {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
+
+  .cart-total h2 {
+    font-size: 18px;
+  }
+
+  .cart-total button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .cart-promocode-input input {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+
+  .cart-promocode-input button {
+    flex: 1 1 100%;
+  }
 }

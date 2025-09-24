@@ -23,8 +23,8 @@ const Footer = () => {
         <div className="right-content">
             <h6>Contact Info</h6>
             <p>Address: Kigali, Rwanda</p>
-            <p>Phone: +250 78000000</p>
-            <p>Email: ..........</p>
+            <p>Phone: +250793169027</p>
+            <p>Email: +250793169027</p>
             {/* social medias */}
         </div>
     </div>

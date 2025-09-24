@@ -12,9 +12,9 @@ const About = () => {
             <img src={assets.About} alt="" />
         </div>
         <div className="about-content">
-            <h1>Our Story</h1>
+            <h1>Who we are</h1>
             <hr />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, reprehenderit nobis. Consequatur nisi nemo, autem alias perspiciatis ratione illum aliquam at, saepe impedit ut quo, nobis expedita quibusdam sint optio?</p>
+            <p>We are a local business that provides fresh poultry products to our community. Our mission is to make poultry shopping simple, safe, and affordable.</p>
         </div>      
     </div>
     </div>

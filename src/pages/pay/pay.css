@@ -1,0 +1,58 @@
+body{
+    font-size: 18px;
+}
+.payment-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.payment-div h1{
+    color: #b57a0d;
+}
+
+.sub-div-pay {
+  padding: 20px;
+  border-radius: 15px;
+  /* background: #fff; */
+  max-width: 600px;
+  text-align: center;
+}
+img{
+    width: 400px;
+    border-radius: 50%;
+}
+.pay-p{
+    margin: 50px;
+    line-height: 1.5;
+}
+.sub-div-pay button{
+        background-color: #b57a0d;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 30px;
+    margin: 40px;
+}
+
+/* Animated Gradient Border */
+.gradient-border {
+  position: relative;
+  /* border-radius: 15px; */
+  padding: 2px; /* space for border */
+  background: linear-gradient(270deg,antiquewhite,#b57a0d);
+  background-size: 600% 600%;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+.gradient-border > * {
+  /* background: #fff; inner background */
+  border-radius: 12px;
+  padding: 20px;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

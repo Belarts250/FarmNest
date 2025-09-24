@@ -3,6 +3,8 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import './Cart.css';
 import { StoreContext } from "../../Components/context/StoreContext";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Cart = () => {
   const { cartItems, poultry_products, removeFromCart, getTotalCartAmount } =
@@ -11,7 +13,9 @@ const Cart = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="cart">
+    <>
+    {/* <Navbar /> */}
+          <div className="cart">
       <div className="cart-items">
         <div className="cart-items-header">
           <p>Items</p>
@@ -64,7 +68,7 @@ const Cart = () => {
               ${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}
             </p>
           </div>
-          <button onClick={() => navigate("/order")}>
+          <button onClick={() => navigate("/pay")}>
             PROCEED TO CHECK OUT
           </button>
         </div>
@@ -78,6 +82,9 @@ const Cart = () => {
         </div>
       </div>
     </div>
+    {/* <Footer /> */}
+    </>
+  
   );
 };
 

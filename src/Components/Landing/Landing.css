@@ -39,4 +39,9 @@ background: url('./home.jpeg') no-repeat center center/cover;
     .div-content p{
         display: none;
     }
+    .div-content h4{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
 }
