@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="left-content">
           <div className="logo-div">
             <img src={assets.Logo} alt="FarmNest Logo" />
-            <h1>FarmNest</h1>
+            <h1><a href="/">FarmNest</a></h1>
           </div>
         </div>
 

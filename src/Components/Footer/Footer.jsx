@@ -24,7 +24,7 @@ const Footer = () => {
             <h6>Contact Info</h6>
             <p>Address: Kigali, Rwanda</p>
             <p>Phone: +250793169027</p>
-            <p>Email: +250793169027</p>
+            <p>Email: ntayombavalentin9@gmail.com</p>
             {/* social medias */}
         </div>
     </div>

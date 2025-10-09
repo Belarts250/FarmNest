@@ -33,9 +33,9 @@ const Cart = () => {
               <div key={item._id} className="cart-items-row">
                 <img src={item.image} alt={item.name} className="cart-item-img" />
                 <p>{item.name}</p>
-                <p>${item.price}</p>
+                <p>{item.price} RWF</p>
                 <p>{cartItems[item._id]}</p>
-                <p>${item.price * cartItems[item._id]}</p>
+                <p>{item.price * cartItems[item._id]}RWF</p>
                 <p
                   onClick={() => removeFromCart(item._id)}
                   className="cart-remove"
@@ -54,32 +54,32 @@ const Cart = () => {
           <h2>Cart totals</h2>
           <div className="cart-total-details">
             <p>Subtotal</p>
-            <p>${getTotalCartAmount()}</p>
+            <p>{getTotalCartAmount()} RWF</p>
           </div>
           <hr />
           <div className="cart-total-details">
             <p>Delivery fee</p>
-            <p>${getTotalCartAmount() === 0 ? 0 : 2}</p>
+            <p>{getTotalCartAmount() === 0 ? 0 : 2}RWF</p>
           </div>
           <hr />
           <div className="cart-total-details">
             <p>Total</p>
             <p>
-              ${getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}
+              {getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2} RWF
             </p>
           </div>
           <button onClick={() => navigate("/pay")}>
-            PROCEED TO CHECK OUT
+            CONTINUE TO PAYMENT
           </button>
         </div>
 
-        <div className="cart-promocode">
-          <p>If you have a promo code, enter it here</p>
+        {/* <div className="cart-promocode">
+          <p>Thank you for making Us Grow</p>
           <div className="cart-promocode-input">
             <input type="text" placeholder="Promo code" />
-            <button>Submit</button>
+            <button>See you next Time 👋</button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
     {/* <Footer /> */}
