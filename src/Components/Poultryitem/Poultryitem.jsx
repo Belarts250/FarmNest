@@ -1,6 +1,6 @@
 // src/Components/PoultryItem/PoultryItem.jsx
 import React, { useContext } from 'react';
-import './PoultryItem.css';
+import './Poultryitem.css';
 import { StoreContext } from '../context/StoreContext';
 
 const PoultryItem = ({ id, name, description, price, image }) => {
