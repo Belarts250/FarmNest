@@ -1,7 +1,7 @@
 // src/Components/PoultryDisplay/PoultryDisplay.jsx
 import React, { useContext } from 'react';
-import './PoultryDisplay.css';
-import PoultryItem from '../PoultryItem/PoultryItem';
+import './Poultrydisplay.css';
+import PoultryItem from '../Poultryitem/Poultryitem';
 import { StoreContext } from '../context/StoreContext';
 
 const PoultryDisplay = ({ category }) => {
