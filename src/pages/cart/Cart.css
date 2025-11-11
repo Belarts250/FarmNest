@@ -89,7 +89,7 @@
   width: 100%;
   margin-top: 20px;
   padding: 12px;
-  background: #28a745;
+  background: #78773d;
   border: none;
   border-radius: 8px;
   color: white;
@@ -100,7 +100,7 @@
 }
 
 .cart-total button:hover {
-  background: #218838;
+  background: #ae7d0b;
 }
 
 /* Promo code section */

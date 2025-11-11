@@ -14,7 +14,7 @@ const Cart = () => {
 
   return (
     <>
-    {/* <Navbar /> */}
+    <Navbar />
           <div className="cart">
       <div className="cart-items">
         <div className="cart-items-header">
@@ -82,7 +82,7 @@ const Cart = () => {
         </div> */}
       </div>
     </div>
-    {/* <Footer /> */}
+    <Footer />
     </>
   
   );

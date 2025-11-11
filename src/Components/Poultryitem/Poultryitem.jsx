@@ -24,6 +24,7 @@ const PoultryItem = ({ id, name, description, price, image }) => {
         <h3>{name}</h3>
         <p className="poultry-desc">{description}</p>
         <p className="poultry-price">{price} RWF</p>
+
       </div>
     </div>
   );

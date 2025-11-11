@@ -3,6 +3,7 @@ import './Navbar.css';
 import { assets } from '../../assets/assets';
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import CartIcon from '../cartIcon/cartIcon';
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -25,7 +26,7 @@ const Navbar = () => {
           <a href="/">Home</a>
           <a href="#about">About Us</a>
           <a href="#products">Products</a>
-          <Link to="/cart">Cart</Link>
+          <Link to="/cart"> <CartIcon /> </Link>
           
         </div>
         <FaBars size={22} className='menu-bar' onClick={toggleSidebar} />
