@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { StoreContext } from "../context/StoreContext";
 import { ShoppingCart } from "lucide-react"; // 🛒 clean modern icon
-import "./CartIcon.css";
+import "./cartIcon.css";
 
 const CartIcon = () => {
   const { cartItems, poultry_products } = useContext(StoreContext);
