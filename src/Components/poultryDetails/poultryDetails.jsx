@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { StoreContext } from "../context/StoreContext";
-import "./PoultryDetails.css";
+import "./poultryDetails.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
